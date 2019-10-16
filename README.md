@@ -27,7 +27,7 @@ Less **{ }**
 
 Stylus 🌱
 
-Sass 
+Sass 👾
 
 Finally, this project was developed mainly with Sass
 ## Features
