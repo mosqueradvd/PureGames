@@ -1,0 +1,31 @@
+.ubicacion--perfil {
+	width: 50%;
+	height: 80px;
+	margin: 30px auto 0 auto;
+	padding: 20px 0 0 50px;
+	border-radius: 20px;
+	background-color: $light-color;
+	@include box;
+
+	i {
+		display: block;
+		float: left;
+		padding-right: 10px;
+		font-size: 40px;
+		color: $variant-color;
+	}
+
+	h2 {
+		font-weight: 600;
+		font-size: 20px;
+		@include titles($FontTwo);
+	}
+
+	h3 {
+		font-size: 12px;
+		//1 agregar aca
+
+		color: get-opacity($primary-color, .5);
+		@include titles($FontTwo);
+	}
+}

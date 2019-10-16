@@ -1,0 +1,83 @@
+//ver diseno
+//explicar estructura completa
+//hacer header
+//hacer footer
+//hacer plantilla
+//pegar en todas las otras paginas
+
+//Variables
+$FontOne: 'Lato',
+sans-serif;
+$FontTwo: 'Oswald',
+sans-serif;
+$primary-color: #333333;
+$secondary-color: #8841DA;
+$variant-color: #3f579a;
+$light-color: #FFF;
+
+//Mixins
+@mixin box {
+	color: $primary-color;
+	filter: drop-shadow(0 4mm 4mm rgb(183, 183, 183));
+}
+
+@mixin shadow {
+	color: $primary-color;
+	box-shadow: 0px 20px 33px 0px rgba($color: #000000, $alpha: 0.2)
+}
+
+@mixin titles($font) {
+	@if $font==$FontOne {
+		font-family: $FontOne;
+	}
+
+	@else {
+		font-family: $FontTwo;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: calculateRem($size)*1.5;
+}
+
+// Functions
+@function getOpacity($color, $amount) {
+	@return rgba($color, $amount);
+}
+
+
+@each $header,
+$size in (h1: 30px, h2: 25px, h3: 20px) {
+	#{$header} {
+		font-size: $size;
+		@include titles($FontTwo);
+		margin: 0;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #F9FAFC;
+	color: $primary-color;
+	@include titles($FontOne);
+	@include font-size(18px);
+}
+
+main {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}

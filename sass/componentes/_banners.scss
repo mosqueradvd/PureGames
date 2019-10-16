@@ -1,0 +1,27 @@
+.banner--homepage {
+	max-width: 100%;
+	padding: 50px;
+	display: flex;
+	margin-bottom: 20px;
+	flex-direction: column;
+	background-color: $secondary-color;
+	color: $light-color;
+
+	h3 {
+		@include font-size(20px);
+		@include titles($FontTwo)
+	}
+
+	.button {
+		padding: 10px;
+		height: 50px;
+		border: 2px solid $light-color;
+		@include font-size(18px);
+		@include titles($FontTwo)
+	}
+
+	@include media(desktop-s) {
+		width: 300px;
+		margin-left: 10px;
+	}
+}

@@ -1,0 +1,71 @@
+.intro {
+	width: 1340px;
+	height: 650px;
+	padding: 10px;
+	margin: 0 auto;
+	position: relative;
+	@include box;
+
+
+	&__imagen {
+		width: 1320px;
+		position: absolute;
+
+		img {
+			width: 100%;
+			height: 624px;
+			object-fit: cover;
+		}
+	}
+
+	&__contenido {
+		width: 50%;
+		margin: 0 auto;
+		position: absolute;
+		top: 156px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		color: $light-color;
+	}
+
+	&__categoria {
+		color: getOpacity($light-color, .50);
+		@include titles($FontTwo);
+	}
+
+	&__titulo {
+		@include font-size(45px);
+		// line-height: 1.5375em;
+		@include titles($FontTwo);
+	}
+
+	&__autor {
+		width: 150px;
+		margin: 0 auto;
+		position: absolute;
+		top: 400px;
+		left: 0;
+		right: 0;
+		color: $light-color;
+
+		img {
+			width: 60px;
+			height: 50px;
+			float: left;
+			padding-right: 10px;
+			border-radius: 10em;
+		}
+
+		span {
+			display: inline-block;
+			@include titles($FontOne);
+
+		}
+
+		&-titulo {
+			color: getOpacity($light-color, .50);
+			@include titles($FontOne);
+		}
+	}
+}

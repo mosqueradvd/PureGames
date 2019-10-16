@@ -1,0 +1,41 @@
+.sidebar--listado {
+	max-width: 100%;
+	margin: 20px;
+	display: flex;
+	padding: 14px;
+	flex-direction: column;
+	@include shadow();
+
+	h3 {
+		@include font-size(20px);
+		@include titles($FontTwo)
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		padding: 10px 0;
+		margin: 10px 0px;
+		list-style: none;
+		border-top: 1px solid #CCC;
+	}
+
+	a {
+		display: flex;
+		padding: 10px 20px;
+		text-decoration: none;
+		color: $primary-color;
+	}
+
+	&__numero {
+		margin-right: 20px;
+		color: getOpacity($primary-color, .5);
+	}
+
+	@include media(desktop-s) {
+		max-width: 300px;
+	}
+}

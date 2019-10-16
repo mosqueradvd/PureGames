@@ -1,0 +1,30 @@
+.encabezado--con-filtros {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px 0;
+
+	h2 {
+		margin-top: 10px;
+		font-size: 30px;
+		@include titles($FontTwo);
+	}
+
+	.filtros {
+		width: 250px;
+		height: 60px;
+		padding: 20px;
+		margin-left: auto;
+		@include box;
+	}
+
+	span {
+		@include titles($FontTwo);
+	}
+
+	a {
+		margin-left: 20px;
+		color: #ccc;
+		font-size: 20px;
+	}
+}

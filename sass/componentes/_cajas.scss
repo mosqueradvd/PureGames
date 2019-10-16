@@ -1,0 +1,115 @@
+.contenedor--cajas {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	max-width: 1400px;
+}
+
+.caja {
+	max-width: 430px;
+	@include box;
+
+	img {
+		width: 100%;
+	}
+
+	&__contenido {
+		padding: 25px;
+		background-color: $light-color;
+	}
+
+	&__categoria {
+		color: $secondary-color;
+		@include titles($FontTwo);
+	}
+}
+
+.contenedor--cajas .caja a {
+	text-decoration: none;
+	color: $variant-color;
+	@include titles($FontTwo);
+}
+
+.contenido {
+	margin-bottom: 40px;
+	justify-content: space-evenly;
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.caja--con-fondo {
+	display: block;
+	box-shadow: none;
+	position: relative;
+	overflow: hidden;
+	background-color: $primary-color;
+
+	img {
+		display: flex;
+		max-width: 100%;
+		max-height: auto;
+		position: absolute;
+		opacity: .5;
+		object-fit: cover;
+	}
+
+	&__contenido {
+		padding: 20px;
+		position: absolute;
+		text-align: center;
+		color: $light-color;
+
+		p {
+			color: $light-color;
+		}
+
+		h3 {
+			color: $light-color
+		}
+	}
+
+	&__categoria {
+		display: block;
+		width: auto;
+		max-width: 100px;
+		margin: 0 auto;
+		text-align: center;
+		background-color: $secondary-color;
+		color: $light-color;
+		@include titles($FontTwo)
+	}
+
+}
+
+.caja--grande {
+	max-width: 1000px;
+	height: 100%;
+
+	h2 {
+		@include titles($FontTwo);
+		@include font-size(45px);
+	}
+
+
+	.caja--con-fondo__contenido {
+		padding-top: 200px;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+}
+
+.caja--mediana {
+	max-width: 600px;
+	height: 250px;
+	margin-left: 10px;
+}
+
+.caja--pequena {
+	max-width: 300px;
+	// height: 230px;
+}

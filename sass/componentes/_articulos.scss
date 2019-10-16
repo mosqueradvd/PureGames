@@ -1,0 +1,51 @@
+.articulos {
+	width: 50%;
+	padding: 30px 0 0 50px;
+	background-color: $primary-color;
+}
+
+.articulo {
+	margin-bottom: 50px;
+	border-bottom: 2px solid $secondary-color;
+
+	&__categoria {
+		font-weight: 500;
+		font-size: 16px;
+		color: $secondary-color;
+		@include titles($FontTwo);
+	}
+
+	&__titulo {
+		// font-size: 30px;
+		color: $light-color;
+		@include titles($FontTwo);
+	}
+
+	&__descripcion {
+		font-size: 18px;
+		color: $light-color;
+		line-height: 30px;
+		margin-bottom: 30px;
+		padding-right: 100px;
+	}
+}
+
+.articulo--principal {
+	max-width: 660px;
+	margin: 0 auto;
+
+	&__intro {
+		padding-top: 3em;
+		font-size: 25px;
+	}
+
+	h3 {
+		color: $secondary-color;
+	}
+
+	h2 {
+		margin: 40px 0 40px 0;
+		text-align: center;
+		@include font-size(50px)
+	}
+}
