@@ -1033,6 +1033,7 @@ main {
 .nav--header ul li {
   list-style: none;
   margin-right: 50px;
+  color: #8841DA;
 }
 
 .nav--header ul a {
