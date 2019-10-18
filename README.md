@@ -9,7 +9,7 @@
 
 🎮 **A multi-page video games website project made with preprocessors**.
 
-✅ Live Preview: <a href="https://paperapp.now.sh/" target="_BLANK"></a>
+✅ Live Preview: <a href="https://mosqueradvd.github.io/PureGames/" target="_BLANK"></a>
 
 <p align="center">
    Made with ❤️ by
