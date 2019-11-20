@@ -12,6 +12,10 @@
 ✅ Live Preview: <a href="https://mosqueradvd.github.io/PureGames/" target="_BLANK"></a>
 
 <p align="center">
+<img align="center" style="margin: 0 auto;" src="https://github.com/mosqueradvd/PureGames/blob/master/images/imgproject-overview-.png">
+</p>
+
+<p align="center">
    Made with ❤️ by
   </p>
   
