@@ -20,7 +20,7 @@
   </p>
   
   <p align="center">
-   <a href="https://twitter.com/JP1016v1"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/mosqueradvd?style=social"> </a>
+   <a href="https://twitter.com/mosqueradvd"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/mosqueradvd?style=social"> </a>
   </p>
 
 
